@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.1.1.222:33078/golf
+    username: golf
+    password: golf_123#
+  jpa:
+    show-sql: true

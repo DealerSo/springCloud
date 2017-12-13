@@ -1,0 +1,13 @@
+server:
+  port: 8082
+student:
+  servicePath: http://localhost:8081/provider/findStudent/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true    # 显示真实的ip地址，默认是false
+spring:
+  application:
+    name: wood-consumer

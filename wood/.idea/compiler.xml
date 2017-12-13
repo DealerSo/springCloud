@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="leadbank-consumer" />
+        <module name="leadbank-eureka" />
+        <module name="leadbank-provider" />
+        <module name="wood-consumer" />
+        <module name="wood-eureka" />
+        <module name="wood-provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="leadbank" target="1.6" />
+      <module name="leadbank-consumer" target="1.6" />
+      <module name="leadbank-eureka" target="1.6" />
+      <module name="leadbank-provider" target="1.6" />
+      <module name="wood" target="1.6" />
+      <module name="wood-consumer" target="1.6" />
+      <module name="wood-eureka" target="1.6" />
+      <module name="wood-provider" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
