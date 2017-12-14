@@ -18,6 +18,15 @@ public class Product implements Serializable {
     // 产品价格
     private String price;
 
+    public Product(){}
+
+    public Product(String itemCode,String name,String bankName,String price){
+        this.itemCode = itemCode;
+        this.name = name;
+        this.bankName = bankName;
+        this.price = price;
+    }
+
     public String getItemCode() {
         return itemCode;
     }

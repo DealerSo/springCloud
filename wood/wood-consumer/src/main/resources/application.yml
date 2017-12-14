@@ -9,4 +9,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-
+# 启动hystrix，feign.hystrix.enabled 默认为false，关闭的状态
+feign:
+  hystrix:
+    enabled: true

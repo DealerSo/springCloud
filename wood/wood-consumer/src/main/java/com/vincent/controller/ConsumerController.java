@@ -18,6 +18,7 @@ public class ConsumerController {
     @Autowired
     private RestTemplate restTemplate;
 
+    @SuppressWarnings("SpringJavaAutowiringInspection")
     @Autowired
     private ProductService productService;
 

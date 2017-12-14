@@ -2,6 +2,7 @@ package com.vincent;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
@@ -20,6 +21,8 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 // 声明式服务调用
 @EnableFeignClients(basePackages = "com.vincent.api")
+// 解决容错问题
+@EnableCircuitBreaker
 public class ConsumerApplication {
 
 	@Bean
