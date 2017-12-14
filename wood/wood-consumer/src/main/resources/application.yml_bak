@@ -1,5 +1,0 @@
-server:
-  port: 8082
-student:
-  servicePath: http://localhost:8081/provider/findStudent/
-

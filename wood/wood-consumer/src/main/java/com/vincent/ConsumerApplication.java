@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -17,6 +18,8 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 // 表示是一个Eureka客户端
 @EnableDiscoveryClient
+// 声明式服务调用
+@EnableFeignClients(basePackages = "com.vincent.api")
 public class ConsumerApplication {
 
 	@Bean

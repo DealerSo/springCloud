@@ -22,9 +22,20 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		
+		<dependency>
 			<!--ribbon 实现客户端负载均衡-->
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-ribbon</artifactId>
+		</dependency>
+
+		<dependency>
+			<!--feign 声明式服务调用-->
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
 		</dependency>
 	</dependencies>
 

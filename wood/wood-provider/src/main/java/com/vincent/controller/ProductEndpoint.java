@@ -14,8 +14,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/products")
-public class ProductController {
-    protected Logger logger = LoggerFactory.getLogger(ProductController.class);
+public class ProductEndpoint {
+    protected Logger logger = LoggerFactory.getLogger(ProductEndpoint.class);
 
     @GetMapping
     public List<Product> listProduct() {
