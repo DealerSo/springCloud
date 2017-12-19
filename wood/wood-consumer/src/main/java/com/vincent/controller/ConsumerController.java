@@ -22,12 +22,12 @@ public class ConsumerController {
     @Autowired
     private ProductService productService;
 
-    @Value("${student.servicePath}")
-    private String providerUrl;
+//    @Value("${student.servicePath}")
+//    private String providerUrl;
 
     @GetMapping(value = "/getStudent/{id}")
     public Student getStudent(@PathVariable Integer id){
-        return this.restTemplate.getForObject(this.providerUrl + id,Student.class);
+        return this.restTemplate.getForObject("http://wood-provider/student/findStudent/" + id,Student.class);
     }
 
     @RequestMapping(value = "/findProducts",method = RequestMethod.GET)
